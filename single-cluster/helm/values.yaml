@@ -1,3 +1,5 @@
 replication: true
 replicas: 1
 serviceType: NodePort
+#Default value for label variable. May be overwritten by Fleet with the value of the cluster label called "testid"
+testid: none
