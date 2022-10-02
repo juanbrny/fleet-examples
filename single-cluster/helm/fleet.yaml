@@ -6,9 +6,7 @@ namespace: fleet-helm-example
 
 # Custom helm options
 helm:
-  #Variable that will hold the value of label testid defined on each cluster
-  #We'll add that label to the frontend objects
-  testid: global.fleet.clusterLabels.testid
+
   
   # The release name to use. If empty a generated release name will be used
   releaseName: guestbook
@@ -34,3 +32,6 @@ helm:
   # Custom values that will be passed as values.yaml to the installation
   values:
     replicas: 2
+    #Variable that will hold the value of label testid defined on each cluster
+    #We'll add that label to the frontend objects
+    testid: global.fleet.clusterLabels.testid
